@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Fotografer Profesional</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #222; color: white; padding: 1rem; text-align: center; }
+    main { padding: 2rem; }
+    section { margin-bottom: 2rem; }
+    .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
+    .social a { margin: 0 10px; color: #333; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rafi Pratama - Fotografer Profesional</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Halo! Saya Rafi, seorang fotografer profesional yang berfokus pada fotografi pernikahan, produk, dan potret. Dengan lebih dari 5 tahun pengalaman, saya siap mengabadikan momen terbaik Anda.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Galeri Karya</h2>
+      <img src="foto1.jpg" alt="Hasil Foto 1">
+      <img src="foto2.jpg" alt="Hasil Foto 2">
+      <img src="foto3.jpg" alt="Hasil Foto 3">
+    </section>
+
+    <section class="social">
+      <h2>Temui Saya di:</h2>
+      <a href="https://instagram.com/rafifoto" target="_blank">Instagram</a>
+      <a href="https://facebook.com/rafifoto" target="_blank">Facebook</a>
+      <a href="mailto:rafifoto@gmail.com">Email</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rafi Pratama. Hak Cipta Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
