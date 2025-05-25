@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contoh Tampilkan Komentar</title>
+  <style>
+    #komentar {
+      display: none; /* Awalnya komentar disembunyikan */
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Blog Post</h2>
+  <p>Ini adalah isi artikel blog...</p>
+
+  <button id="toggleKomentarBtn">Tampilkan Komentar</button>
+
+  <div id="komentar">
+    <p><strong>Pengguna1:</strong> Ini komentar pertama.</p>
+    <p><strong>Pengguna2:</strong> Saya setuju dengan artikel ini!</p>
+  </div>
+
+  <script>
+    const tombol = document.getElementById('toggleKomentarBtn');
+    const komentar = document.getElementById('komentar');
+
+    tombol.addEventListener('click', function() {
+      if (komentar.style.display === 'none') {
+        komentar.style.display = 'block';
+        tombol.textContent = 'Sembunyikan Komentar';
+      } else {
+        komentar.style.display = 'none';
+        tombol.textContent = 'Tampilkan Komentar';
+      }
+    });
+  </script>
+</body>
+</html>
