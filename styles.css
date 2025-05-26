@@ -1,0 +1,35 @@
+
+/* styles.css */
+
+/* Default styles for desktop */
+img.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Design using Media Queries */
+@media (max-width: 768px) {
+  img.responsive {
+    max-width: 100%;
+  }
+
+  .container {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 14px;
+  }
+}
