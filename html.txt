@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog dengan Komentar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2em;
+        }
+        .comment-section {
+            display: none;
+            margin-top: 1em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Judul Blog</h1>
+<p>Ini adalah isi artikel blog singkat.</p>
+
+<button onclick="toggleComments()">Tampilkan Komentar</button>
+
+<div id="comments" class="comment-section">
+    <h2>Komentar</h2>
+    <p><strong>Ana:</strong> Artikel yang sangat membantu!</p>
+    <p><strong>Budi:</strong> Terima kasih atas informasinya!</p>
+</div>
+
+<script>
+function toggleComments() {
+    var commentDiv = document.getElementById("comments");
+    if (commentDiv.style.display === "none" || commentDiv.style.display === "") {
+        commentDiv.style.display = "block";
+    } else {
+        commentDiv.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
